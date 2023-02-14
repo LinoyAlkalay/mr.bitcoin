@@ -1,0 +1,17 @@
+.contact-edit {
+    min-height: 80vh;
+    margin-bottom: 2em;
+    @include flex($justify: center);
+
+    form {
+        @include flex;
+        flex-direction: column;
+        width: 300px;
+        min-height: 300px;
+
+        input,
+        button {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.contact-preview {
+    background-color: $bgc2;
+    border-radius: .5em;
+    position: relative;
+
+    &>* {
+        padding: 1em 0;
+        margin: 0 1em;
+    }
+
+    .actions {
+        @include flex;
+    }
+
+    .remove {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    span {
+        display: block;
+    }
+
+    img {
+        margin-bottom: 1em;
+    }
+}

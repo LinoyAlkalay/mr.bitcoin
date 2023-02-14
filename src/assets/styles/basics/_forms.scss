@@ -1,0 +1,52 @@
+h1 {
+    font-family: clash-semibold;
+    font-size: rem(34px);
+}
+
+h2 {
+    font-size: rem(22px);
+}
+
+h3 {
+    font-size: rem(18px);
+}
+
+small {
+    font-size: rem(12px);
+}
+
+.prim-btn {
+    @include flex($justify: center);
+    flex-direction: row;
+    padding: em(14px) em(10px);
+    background: $grd-clr1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: em(12px);
+
+    &:hover {
+        background: $grd-clr5;
+        box-shadow:
+            inset 20px 0 60px #9D62D9,
+            inset -20px 0 60px #6262D9;
+    }
+}
+
+.txt-btn {
+    color: $prim-clr1;
+}
+
+input {
+    display: block;
+    padding: em(14px) em(10px);
+    background-color: $bgc2;
+    border-radius: em(12px);
+    border: none;
+}
+
+.chip-btn {
+    @include flex($justify: center);
+    flex-direction: column;
+    padding: em(12px) em(18px);
+    border-radius: em(12px);
+    background: $prim-clr2;
+}
